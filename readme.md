@@ -1,23 +1,21 @@
 # Introduction
 
-Hello! My name is Tyler Barbero. During the summer of 2019, I started my first
-research internship. I've been working with Dr. Amato Evan and PhD candidate
-Alexandra Kuwano.
+This repository includes the code that will automate data transfer from a GPS
+to a server.
 
 ### What are we doing?
 
-Overall, our lab wants to understand the meteorological
-processes behind dust storms in the Salton Basin.
+The Evan Research Lab aims to study how the shrinking Salton Sea will
+influence dust storm activity in the region surrounding it. We constructed a
+research site that will provide us with continuous data of aerosols, boundary
+layer structure, water vapor, and radiative fluxes.
 
-### My unique role
+### My role
 
-I am using a GPS/receiver called the Trimble NetR9 to estimate the precipitable
-water vapor (PWV) in the atmosphere. This will help us understand the
-composition of air masses causing dust storms and will therefore help us
-prove or reject our hypothesis on how dust storms form in this region. I have
-been working on code to automate downloading raw GPS data from the GPS 
-to the our server on Sahara.
-The summer has ended and I am now continuing research as I start my 4th year
-as an undergraduate as SIO, UC San Diego.
-
---Tyler
+I utilize a Trimble NetR9 GNSS Receiver. It communicates with satellites and
+records observables, one of which is the pseuorange. The pseudorange is the 
+absolute path the signal travels from GPS satellite to receiver on the ground.
+We're able to isolate the length of the path caused by water vapor. With a 
+technique called retrieval, we will be able to estimate the water vapor
+in the atmosphere. Here, I write the code that will automate data transfer
+from the GPS receiver to our server.
