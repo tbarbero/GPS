@@ -9,19 +9,19 @@ def gps_download(tyearmonth, tday, localdir, server, user, password):
     """
     gps_download(tyearmonth=, tday=, localdir=, server=, user=, password=)
     
-        Function for FTPing into remote server and downloading .T02 raw files from Trimble NetR9
+        Function for FTPing into GPS and downloading .T02 raw files from Trimble NetR9
         
         Formating for GPS files
         -----------------------
         Path Style: YYYYMM/DD
         Name Style: YYMMDDHH
-        *Suominet requires 30 second intervals for files
+        *** suominet requires 30 second intervals for files
         
         Parameters (strings)
         --------------------
         tyearmonth: YYYYMM
-        tday: DD (str)
-        *** if desired day is current day, enter None for tyearmonth and tday
+        tday: DD 
+        *** if desired day is current day, enter the None datatype for tyearmonth and tday
         localdir: /local/path/of/where/data/will/be/stored
         server: static IP address of Trimble GPS
         user: username to login to GPS
