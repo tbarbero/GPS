@@ -29,9 +29,9 @@ tday = previousday[8:10]
 #tyearmonth and tday are now variables that will return currentday - 1 day (yesterday) so we are able to CD into yesterdays directories and pull the 23-hr file and store it in yesterday's directory when this script runs at 00:00 of everyday (the new day)
 
 # Logging into server
-ftp = FTP('63.42.96.133')
+ftp = FTP('server_IP_Address')
 print('Attempting login into Evan Research Lab GPS...')
-ftp.login('admin', 'evanlab')
+ftp.login('username', 'password')
 print('Login successful.')
 
 # Starting time
